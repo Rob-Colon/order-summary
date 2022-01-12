@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+  /* padding: 0; */
+}
+
+:root {
+  --font-family: "Red Hat Display", sans-serif;
+
+  --fw-light: 500;
+  --fw-reg: 700;
+  --fw-bold: 900;
+
+  --fs: 16px;
+
+  --clr-paleBlue: hsl(225, 100%, 94%);
+  --clr-brightBlue: hsl(245, 75%, 52%);
+  --clr-vPaleBlue: hsl(225, 100%, 98%);
+  --clr-desatBlue: hsl(224, 23%, 55%);
+  --clr-darkBlue: hsl(223, 47%, 23%);
+}
+
+html {
+  font-size: var(--fs);
+  font-family: var(--font-family);
+  max-width: 1400px;
+}
+
+.container {
+  background: var(--clr-vPaleBlue);
+  max-width: 1400px;
+  height: 700px;
+  margin: auto;
+  position: relative;
+}
+
+.page .bg__img {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.order {
+  /* border: 2px solid red; */
+  background-color: white;
+  border-radius: 25px;
+  max-width: 350px;
+  height: fit-content;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  bottom: 2rem;
+  left: 0;
+  margin: auto;
+}
+
+.order .img1 img {
+  width: 100%;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.title {
+  text-align: center;
+  margin: 1rem;
+  font-weight: var(--fw-bold);
+  margin-top: 40px;
+}
+
+.info {
+  text-align: center;
+  margin: 1rem;
+  margin-top: 40px;
+  font-weight: var(--fw-light);
+  color: var(--clr-desatBlue);
+}
+
+.plan {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--clr-vPaleBlue);
+  border-radius: 15px;
+  width: 300px;
+  /* margin: 1rem; */
+  margin-top: 40px;
+  padding: 1rem;
+}
+.yearly {
+  margin-right: 3rem;
+  margin-left: 1rem;
+}
+
+.annual {
+  margin-bottom: 5px;
+  font-weight: var(--fw-bold);
+}
+.cost {
+  color: var(--clr-desatBlue);
+}
+.change {
+  font-size: 0.9rem;
+}
+.change:hover {
+  text-decoration: none;
+  color: var(--clr-desatBlue);
+}
+.proceed .btn {
+  background-color: var(--clr-brightBlue);
+  width: 300px;
+  /* color: white; */
+  display: flex;
+  margin-top: 40px;
+  padding: 1rem;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 23px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.1);
+  background-color: var(--clr-desatBlue);
+}
+.payment {
+  color: white;
+  font-weight: var(--fw-reg);
+  font-size: 0.8rem;
+}
+
+.cancel {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: var(--clr-desatBlue);
+  font-weight: var(--fw-reg);
+  text-decoration: none;
+  cursor: pointer;
+}
+.cancel:hover {
+  color: var(--clr-darkBlue);
+}
+
+.attribution {
+  max-width: 300px;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 350px) {
+  .order,
+  .plan,
+  .proceed .btn {
+    width: 90%;
+    font-size: 0.8rem;
+  }
+  .annual {
+    font-weight: var(--fw-reg);
+  }
+}

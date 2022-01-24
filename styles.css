@@ -145,6 +145,10 @@ html {
   text-align: center;
   margin-top: 20px;
 }
+.attribution a {
+  text-decoration: none;
+  color: var(--clr-brightBlue);
+}
 
 @media (max-width: 350px) {
   .order,
